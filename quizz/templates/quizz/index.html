@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form id="results" name="results" action="./results/" method="post">{% csrf_token %}
+    {{ form }}
+    <!--<label >First question:</label><br>-->
+    <!--<input type="radio" name="radAnswer1" value= "ans1"/>-->
+    <!--<label >ans1</label><br>-->
+    <!--<input type="radio" name="radAnswer1" value= "ans2"/>-->
+    <!--<label >ans2</label><br>-->
+    <!--<input type="radio" name="radAnswer1" value= "ans3"/>-->
+    <!--<label >ans3</label><br>-->
+    <!--<input type="radio" name="radAnswer1" value= "ans4"/>-->
+    <!--<label >ans4</label><br>-->
+    <!--<br>-->
+    <!--<label >Sec question:</label><br>-->
+    <!--<input type="radio" name="radAnswer2" value= "ans1"/>-->
+    <!--<label >ans1</label><br>-->
+    <!--<input type="radio" name="radAnswer2" value= "ans2"/>-->
+    <!--<label >ans2</label><br>-->
+    <!--<input type="radio" name="radAnswer2" value= "ans3"/>-->
+    <!--<label >ans3</label><br>-->
+    <!--<input type="radio" name="radAnswer2" value= "ans4"/>-->
+    <!--<label >ans4</label><br>-->
+    <br>
+    <button  type="submit">Send</button>
+</form>
+{% endblock content %}
